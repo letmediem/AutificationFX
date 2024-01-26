@@ -2,3 +2,4 @@ SELECT id, first_name, last_name, username, password, gender FROM users; (для
 DELETE FROM users WHERE username = 'имя_пользователя'; (удаление пользователя)
 ........1 ДОБАВИТЬ ПРОВЕРКУ НА НАЛИЧИЕ ПОЛЬЗОВАТЕЛЯ В БД
         2 ПОКОПАТЬСЯ С ОКНОМ АВТОРИЗАЦИИ ПОЛЬЗОВАТЕЛЯ
+        3 настроить кнопку backButton_registration в окне регистрации
