@@ -6,7 +6,6 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -14,7 +13,6 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
-import javafx.fxml.Initializable;
 
 public class Controller {
 
@@ -36,6 +34,8 @@ public class Controller {
     @FXML
     private PasswordField password_field;
 
+
+
     public void initialize(ActionEvent actionEvent) {
         authSignInButton.setOnAction(event -> {
             try {
@@ -48,6 +48,7 @@ public class Controller {
 
                 Stage currentStage = (Stage) authSignInButton.getScene().getWindow();
                 currentStage.close();
+
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (Exception ex) {
@@ -74,10 +75,8 @@ public class Controller {
         });
 
 
-
-
-
     }
+
 
 
 }
