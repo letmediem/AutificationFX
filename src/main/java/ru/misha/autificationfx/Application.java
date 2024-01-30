@@ -14,7 +14,7 @@ public class Application extends javafx.application.Application {
         stage.setTitle("Autification");
         stage.setScene(scene);
         stage.show();
-
+        System.out.println();
 
 
     }
